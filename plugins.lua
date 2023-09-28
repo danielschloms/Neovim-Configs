@@ -11,8 +11,18 @@ local plugins = {
     opts = {
       ensure_installed = {
         "rust-analyzer",
+        "clangd",
+        "clang-format",
+        "codelldb",
       },
     }
+  },
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    event = "VeryLazy",
+    opts = function ()
+      return require("custom.configs.null-ls")
+    end,
   },
   {
     "rust-lang/rust.vim",
