@@ -1,4 +1,4 @@
-# My personal Neovim/NvChad Config
+# My personal Neovim + NvChad Config
 
 ## Install
 
