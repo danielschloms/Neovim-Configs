@@ -19,3 +19,9 @@ vim.keymap.set("t", "<C-l>", "<cmd>wincmd l<CR>")
 -- Center cursor when searching
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+
+-- VSCode like move line up/down
+vim.keymap.set("n", "<A-j>", "<cmd> move +1 <CR>")
+vim.keymap.set("n", "<A-k>", "<cmd> move -2 <CR>")
+vim.keymap.set("n", "<A-down>", "<cmd> move +1 <CR>")
+vim.keymap.set("n", "<A-up>", "<cmd> move -2 <CR>")
